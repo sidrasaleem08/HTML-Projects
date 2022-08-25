@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            border: 1px solid black;
+            background-color: chartreuse;
+            width: 260px;
+            height:  150px;
+            display: inline-block;
+        }
+        .box2{
+            border: 1px solid black;
+            background-color: chartreuse;
+            width: 260px;
+            height:  150px;
+            display: inline-block;
+        }
+        .box3{
+            border: 1px solid black;
+            background-color: chartreuse;
+            width: 260px;
+            height:  150px;
+            display: inline-block;
+        }
+        .box4{
+            border: 1px solid black;
+            background-color: chartreuse;
+            width: 260px;
+            height:  150px;
+            display: inline-block;
+        }
+        .container{
+            background-color: blue;
+            width: 100vw;
+            height: 170vh;
+        }
+        body{
+            background-color: coral;
+        }
+        @media screen and (max-width: 800px){
+            .container{
+                background-color: coral;
+            }
+            
+            }
+        @media screen and (max-width:700px) {
+            .box1{
+                width: 100px;
+                height: 50;
+                background-color: gold;
+            }
+            
+        }
+        @media screen and (max-width:600px) {
+            .box2{
+                width: 100px;
+                height: 50;
+                background-color: darkturquoise;
+            }
+            
+        }
+        @media screen and (max-width:500px) {
+            .box3{
+                width: 100px;
+                height: 50;
+                background-color: crimson;
+            }
+            
+        }
+        @media screen and (max-width:400px) {
+            .box4{
+                width: 100px;
+                height:50px ;
+                background-color: darkorange;
+            }
+            
+        }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">I am box1</div><div class="box2">I am box2</div><div class="box3">I am box3</div><div class="box4">I am box4</div>
+    </div>
+</body>
+</html>

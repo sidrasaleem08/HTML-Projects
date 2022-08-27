@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            padding: 0 20px 30px 0;
+            line-height: 1.4;
+
+        }
+
+        .flexcontainer {
+            display: flex;
+            width: 100%;
+            height: 700px;
+            border: 3px solid blue;
+            
+            
+            align-content: center;
+
+
+        }
+
+        .flexitem {
+            margin:0px;
+            padding: 20px;
+            width: 75px;
+            /* height: 75px; */
+            background-color: darkmagenta;
+            border: 3px solid black;
+            text-align: center;
+            font-size: 10px;
+            color: black
+            font-weight: bold;
+            
+        }
+        #navbar{
+            flex-direction: column;
+            width: 120px;
+            height: 520px;
+            background-color: yellow;
+        }
+        .flexcontainer2{
+            flex-direction: row;
+        }
+        #header{
+            width: 500px;
+            height: 100px;
+            background-color: chartreuse;
+        }
+        #article{
+            width: 500px;
+            height: 230px;
+            background-color: crimson;
+        }
+
+        #footer{
+            width: 500px;
+            height: 100px;
+            background-color: darkorange;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+        <div class="flexitem" id="navbar">NAVBAR</div>
+    <div class="flexcontainer2">
+        <div class="flexitem" id="header">HEADER</div>
+        <div class="flexitem" id="article">ARTICLE</div>
+        <div class="flexitem" id="footer">FOOTER</div>
+    
+        
+    </div>
+    
+</body>
+</html>

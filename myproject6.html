@@ -1,98 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container1 {
-            background-color: deeppink;
-            color: cornsilk;
-            height: 850px;
-            width: 750px;
-            text-align: left;
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            padding: 0 20px 30px 0;
+            line-height: 1.4;
+            
         }
-
-
-        .navbar {
-            background-color: black;
-            height: 100px;
-            width:200px;
-            color: antiquewhite;
-            position: fixed;
+        .flexcontainer{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            border: 3px solid blue;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items:center;
             
             
-
+        }
+        .flexitem{
+            width: 75px;
+            height: 75px;
+            background-color: darkmagenta;
+            border: 3px solid black;
+            text-align: center;
+            font-size: 30px;
+            color: blanchedalmond;
+            font-weight: bold;
             
+            
+        }
+        #flexitem1{
+            display: flex;
+            height: 200px;
+            width: 500px;
+            background-color: pink;
+            align-items: center;
+            
+            
+            
+        }
+        #flexitem2{
+            background-color: blue;
+            flex-basis: 300px;
+            margin: 20px;
+        }
+        
+        #flexitem3{
+            background-color: yellowgreen;
+            flex-basis: 300px;
+            margin: 20px;
 
         }
+        #flexitem4{
+            background-color: red;
+            flex-basis: 300px;
+            margin: 10px;
 
-        .container2 {
-            background-color: aqua;
-            color: black;
         }
+        #flexitem5{
+            background-color: purple;
+            flex-basis: 300px;
+            margin: 10px;
+
+
+        }
+        #flexitem6{
+            background-color:chartreuse;
+            flex-basis: 300px;
+            margin: 10px;
+
+        }
+        #flexitem7{
+            background-color:aqua;
+            flex-basis: 300px;
+            margin: 10px;
+
+        }
+        #flexitem8{
+            background-color:dodgerblue;
+            flex-basis: 230px;
+            margin: 10px;
+
+        }
+        #flexitem9{
+            background-color: burlywood;
+            flex-basis: 230px;
+            margin: 10px;
+
+        }
+        #flexitem10{
+            background-color: burlywood;
+            flex-basis: 230px;
+            margin: 10px;
+
+        }
+        #flexitem11{
+            background-color: burlywood;
+            flex-basis: 230px;
+            margin: 10px;
+
+        }
+        #flexitem12{
+            background-color: burlywood;
+            flex-basis: 230px;
+            margin: 10px;
+
+        }
+        .nestedbox{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            border: 3px solid blue;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            align-content:center;
+        }
+        #box1{
+
+            background-color: darkorange;
+            width: 50px;
+            height: 50px;
+            
+          
+
+        }
+        #box2{
+            background-color: darkorange;
+            width: 50px;
+            height: 50px;
+            
+            
+        }
+        #box3{
+            background-color: darkorange;
+            width: 50px;
+            height: 50px;
+           
+        }
+        
+            
+        
+        
     </style>
 </head>
-
 <body>
-    
-    <div class="container1">
-        <div class="navbar">This is nav bar
-
+    <div class="flexcontainer">
+        <div class="flexitem" id="flexitem1">1
+            <div class="nestedbox" id="box1">01</div>
+            <div class="nestedbox" id="box2">02</div>
+            <div class="nestedbox" id="box3">03</div>
         </div>
-        <h1>Our Products</h1>
-    
-        <div class="container2">
-            <h2>Hoses</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam fuga nisi quasi laudantium culpa a,
-                tempore consequuntur omnis et similique quos veniam voluptate sit impedit earum ullam voluptatibus est
-                quia magnam voluptas, corporis eligendi labore.</p>
+        <div class="flexitem" id="flexitem2">2</div>
+        <div class="flexitem" id="flexitem3">3</div>
+        <div class="flexitem" id="flexitem4">4</div>
+        <div class="flexitem" id="flexitem5">5</div>
+        <div class="flexitem" id="flexitem6">6</div>
+        <div class="flexitem" id="flexitem7">7</div>
+        <div class="flexitem" id="flexitem8">8</div>
+        <div class="flexitem" id="flexitem8">9</div>
+        <div class="flexitem" id="flexitem8">10</div>
+        <div class="flexitem" id="flexitem8">11</div>
+        <div class="flexitem" id="flexitem8">12</div>
 
-            <h2>Rakes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores quasi consectetur veniam illo
-                laborum molestiae est nesciunt, quisquam perspiciatis consequuntur aliquam rem distinctio necessitatibus
-                iure, delectus esse cumque dolorum aperiam dignissimos veritatis libero? Qui provident asperiores quis
-                laborum perspiciatis.</p>
-            <h2>Shovels</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque et laudantium dolor optio aliquam, quod
-                magnam laborum atque impedit omnis repellendus deserunt fugiat sint ullam ex quo corporis adipisci enim
-                id modi. Eum nulla esse, cum error aliquid, asperiores voluptatum ducimus est id ullam vel eos veritatis
-                impedit, similique nihil?</p>
-            <h2>Tools</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, rem amet molestias ex facilis neque
-                magni nulla unde quo veritatis culpa mollitia maiores ullam corporis ipsa dicta temporibus nam atque.
-                Pariatur quae ab porro eos beatae aliquid impedit rerum quidem.</p>
-            <h2>Wooden Boards</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, officiis! Accusamus quae tempore incidunt
-                corrupti nesciunt magni accusantium delectus hic laboriosam? Aliquid aperiam earum, praesentium
-                voluptatibus animi pariatur porro quam officiis hic voluptas dolorem nisi sed aut illo, non, explicabo
-                rem incidunt. Cupiditate nobis ipsa non iusto animi laudantium et rerum pariatur cum expedita nemo
-                eligendi, delectus ipsam quas voluptates aliquid commodi? Culpa quo voluptatibus, cupiditate est omnis
-                explicabo, iusto aut iste at commodi doloribus porro nesciunt ab ad minus! Consequuntur ullam recusandae
-                amet necessitatibus expedita saepe a laborum doloremque vero accusamus aspernatur aliquam quam tempore
-                natus, animi commodi ab optio quibusdam repellendus! Dignissimos fugiat sequi fugit dolor rem doloremque
-                iusto quod repudiandae? Consectetur est, earum beatae deserunt nulla quibusdam voluptatem accusamus quo
-                molestiae exercitationem, maxime maiores. Obcaecati saepe veritatis itaque, laboriosam quae, doloremque
-                debitis quam nemo voluptatum asperiores ullam dolorum voluptates ex dolorem. Temporibus impedit
-                consectetur facere quae facilis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, eaque. Quisquam dicta dolorem
-                consequuntur nobis in aliquam ex doloribus repellat at, hic perferendis sed sit earum unde dolor ab
-                molestiae inventore iste? Eos, quo. Quo porro provident optio? Dicta, culpa nobis. Quisquam et sed,
-                iusto, eveniet quidem laborum, optio enim labore nisi atque aut odit corrupti alias voluptates eum nemo.
-                Consequuntur nihil sint totam eum eveniet. Quasi ducimus nemo sint, quae deleniti soluta veritatis
-                voluptate veniam fugit dignissimos magni nisi aut dolor similique maxime corrupti a obcaecati rerum ad.
-                Quam labore facere laboriosam nihil perferendis, odit optio nesciunt commodi, ea, voluptate est pariatur
-                eaque aperiam sit blanditiis dolore exercitationem et dolorum culpa placeat. Ratione reprehenderit
-                recusandae ipsa illum, nihil, aperiam fugiat necessitatibus facere numquam laudantium quae excepturi
-                sunt natus veritatis nesciunt soluta dolorem laborum. Voluptatem vitae esse ducimus fugiat rerum.
-                Sapiente est laborum dolor nulla a, non aspernatur officiis necessitatibus? Asperiores dolore autem
-                debitis dicta qui, fugit inventore cupiditate excepturi, aliquam temporibus veritatis. Esse laboriosam
-                distinctio, doloribus fugit odio, iste facilis sapiente, nulla at eum similique optio ullam deleniti
-                eaque id numquam fuga. Accusamus quia inventore sit incidunt odio, officiis perspiciatis animi
-                doloremque praesentium neque consectetur at illum, perferendis quasi!</p>
-        </div>
+    </div>
 </body>
-
 </html>
